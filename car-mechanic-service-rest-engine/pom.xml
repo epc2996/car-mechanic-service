@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- <parent>
+    
+    <artifactId>rest-sample-one</artifactId>
+    <version>1.0.0</version>
+    <relativePath>../</relativePath>
+  </parent> -->
+  <groupId>com.pe.eapc.car.mechanic.service</groupId>
+  <artifactId>car-mechanic-service-engine</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>car-mechanic-service-engine</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <rest-samples-one-version>${project.version}</rest-samples-one-version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <java-version>1.8</java-version>
+    <log4j-version>2.2</log4j-version>
+    <gson-version>2.6.2</gson-version>
+    <junit-version>4.12</junit-version>
+    <java-servlet-version>3.0.1</java-servlet-version>
+    <springframework-version>5.1.1.RELEASE</springframework-version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>${log4j-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>${gson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit-version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.5.1</version>
+          <configuration>
+            <source>${java-version}</source>
+            <target>${java-version}</target>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <modules>
+    <module>car-mechanic-service-engine-rest</module>
+    <module>car-mechanic-service-engine-types</module>
+  </modules>
+</project>

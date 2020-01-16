@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.pe.eapc.car.mechanic.service</groupId>
+    <artifactId>car-mechanic-service-engine</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>car-mechanic-service-engine-rest</artifactId>
+  <packaging>war</packaging>
+  
+  <name>car-mechanic-service-engine-rest</name>
+  <url>www.linkedin.com/in/enrrique-antonio-pariasca-celiz-a83430107</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.pe.eapc.car.mechanic.service</groupId>
+      <artifactId>car-mechanic-service-engine-types</artifactId>
+      <version>${rest-samples-one-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${springframework-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>${java-servlet-version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${springframework-version}</version>
+      <scope>test</scope>
+    </dependency>
+  
+  </dependencies>
+  
+  <build>
+    <finalName>${project.name}</finalName>
+  </build>
+</project>
